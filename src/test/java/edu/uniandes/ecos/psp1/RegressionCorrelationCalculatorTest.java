@@ -62,12 +62,27 @@ public class RegressionCorrelationCalculatorTest
 		return list02;
 	}
 	
+	private ArrayList<Double> loadActualAddedModifiedSize(){
+		ArrayList<Double> list02 = new ArrayList<Double>();
+		list02.add(186.0);
+		list02.add(699.0);
+		list02.add(132.0);
+		list02.add(272.0);
+		list02.add(291.0);
+		list02.add(331.0);
+		list02.add(199.0);
+		list02.add(1890.0);
+		list02.add(788.0);
+		list02.add(1601.0);
+		return list02;
+	}
+	
 	public void test01(){
 		System.out.println("Running Test Case 01");
 		theCalc.setInputSetX(loadEstimatedProxySize());
-		theCalc.setInputSetY(loadPlanAddedModifiedSize());
+		theCalc.setInputSetY(loadActualAddedModifiedSize());
 		System.out.println("X Set: " + loadEstimatedProxySize().toString());
-		System.out.println("Y Set: " + loadPlanAddedModifiedSize().toString());
+		System.out.println("Y Set: " + loadActualAddedModifiedSize().toString());
 		
 		double yk = theCalc.calculateImprovedPredictionYk(386.0);
 		
@@ -75,12 +90,14 @@ public class RegressionCorrelationCalculatorTest
 		System.out.println("B1: " + theCalc.getB1RegressionParameter());
 		System.out.println("Rxy: " + theCalc.getRXYCoeficcient());
 		System.out.println("R2: " + theCalc.getRSquaredCoefficient());
+		System.out.println("Xk: 386.0");
+		System.out.println("Yk: " + yk);
 		
 		assertEquals(1.7279, theCalc.getB1RegressionParameter(), 0.0001);
 		assertEquals(-22.55, theCalc.getB0RegressionParameter(), 0.01);
 		assertEquals(0.9545, theCalc.getRXYCoeficcient(), 0.0001);
 		assertEquals(0.9111, theCalc.getRSquaredCoefficient(), 0.0001);
-		assertEquals(644.429, yk, 0.0001);
+		assertEquals(644.429, yk, 0.001);
 		
 	}
 
