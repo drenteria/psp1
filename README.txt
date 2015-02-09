@@ -6,10 +6,10 @@ Daniel Felipe Rentería Martínez
 Cod. 201522630
 C.C. 80852789
 
-Tarea 1: PSP01
-Programa de Conteo de Lineas de Codigo
+Tarea 3: PSP1
+Calculo de Regresion y Correlacion
 
 Para obtener este proyecto desde el repositorio GutHub, clone el proyecto con la siguiente URL:
-https://github.com/drenteria/psp01.git
+https://github.com/drenteria/psp1.git
 
 Usuario: drenteria

@@ -1,4 +1,4 @@
-package edu.uniandes.ecos.psp1;
+package edu.uniandes.ecos.psp1.view;
 
 /**
  * Hello world!
