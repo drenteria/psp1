@@ -1,0 +1,22 @@
+--- Regression and Correlation Calculator ---
+Please, write the number of elements for each numeric set:
+NOTE: Please be sure all numbers you write are decimals or at least numbers. No letters!
+4
+Enter value X[0]: 10
+Enter value Y[0]: 20
+Enter value X[1]: 15
+Enter value Y[1]: 25
+Enter value X[2]: 30
+Enter value Y[2]: 40
+Enter value X[3]: 45
+Enter value Y[3]: 55
+Please, enter value for Xk to retrieve improved prediction:
+65
+Calculating Regression and Correlation...
+B0: 10.0
+B1: 1.0
+Rxy: 1.0
+R2: 1.0
+Xk: 65.0
+Yk: 75.0
+Finished. Have a nice day!
