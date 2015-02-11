@@ -62,12 +62,12 @@ public class App extends HttpServlet
 			
 			String[] xVals = xValues.split(";");
 			for(String xCurrentVal : xVals){
-				listX.add(Double.valueOf(xCurrentVal));
+				listX.add(Double.valueOf(xCurrentVal.trim()));
 			}
 			
 			String[] yVals = yValues.split(";");
 			for(String yCurrentVal : yVals){
-				listY.add(Double.valueOf(yCurrentVal));
+				listY.add(Double.valueOf(yCurrentVal.trim()));
 			}
 			
 			RegressionCorrelationCalculator theCalc = new RegressionCorrelationCalculator();

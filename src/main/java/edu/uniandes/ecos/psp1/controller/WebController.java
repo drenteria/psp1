@@ -29,11 +29,11 @@ public class WebController {
 				"<h1>PSP1 Regression and Correlation Program!</h1>" +
 				"<p>Please, write numbers to calculate in semicolon (;) separated values.</p>" +
 				"<p>Be sure both inputs have the same amount of numbers.</p>" +
-				"<form action=\"count\" method=\"post\">\n" +
-				"List X: <input type=\"text\" name=\"listX\">\n" +
-				"List Y: <input type=\"text\" name=\"listY\">\n" +
-				"Xk: <input type=\"text\" name=\"xk\">\n" +
-				"<input type=\"submit\" value=\"Show Improved Prediction (Yk)\">\n" +
+				"<form action=\"predict\" method=\"post\"><br/>" +
+				"List X: <input type=\"text\" name=\"listX\"><br/>" +
+				"List Y: <input type=\"text\" name=\"listY\"><br/>" +
+				"Xk: <input type=\"text\" name=\"xk\"><br/>" +
+				"<input type=\"submit\" value=\"Show Improved Prediction (Yk)\">" +
 				"</body>" +
 				"</html>";
 		PrintWriter writer = response.getWriter();
@@ -55,14 +55,14 @@ public class WebController {
 				"<body>" +
 				"<h1>PSP1 Regression and Correlation Program!</h1>" +
 				"<p>Results:</p>" +
-				"List X:" + listX.toString() + "\n" +
-				"List Y:" + listY.toString() + "\n" +
-				"B0: " + theCalc.getB0RegressionParameter() + 
-				"B1: " + theCalc.getB1RegressionParameter() +
-				"Rxy: " + theCalc.getRXYCoeficcient() + 
-				"R2: " + theCalc.getRSquaredCoefficient() +
-				"Xk:" + xk.toString() + "\n" +
-				"Yk:" + yk.toString() + "\n" +
+				"List X:" + listX.toString() + "<br/>" +
+				"List Y:" + listY.toString() + "<br/>" +
+				"B0: " + theCalc.getB0RegressionParameter() + "<br/>" + 
+				"B1: " + theCalc.getB1RegressionParameter() + "<br/>" +
+				"Rxy: " + theCalc.getRXYCoeficcient() + "<br/>" +
+				"R2: " + theCalc.getRSquaredCoefficient() + "<br/>" +
+				"Xk:" + xk.toString() + "<br/>" +
+				"Yk:" + yk.toString() +
 				"</body>" +
 				"</html>";
 		PrintWriter writer = response.getWriter();
